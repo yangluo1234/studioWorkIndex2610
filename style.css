@@ -1,4 +1,8 @@
 body {
   background-color: black;
-  color: blanchedalmond;
+  color: white;
+}
+
+a {
+  color: aqua;
 }
