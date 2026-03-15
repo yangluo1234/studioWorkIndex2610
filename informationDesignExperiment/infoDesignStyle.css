@@ -1,0 +1,131 @@
+/*import font*/
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*define custom variables*/
+:root {
+  /* Late Night Bath Palette by sukinapan https://lospec.com/palette-list/late-night-bath */
+  --col01: #2a2a2a;
+  --col02: #f0f6f0;
+  --col03: #e1f1b1;
+  --col04: #5b5d70;
+  --col05: #74838c;
+  --col06: #d2ef14;
+  --border: solid 2px var(--col04);
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: var(--col01);
+  color: var(--col06);
+  display: flex;
+  flex-direction: column;
+  /*align-items: center;*/
+  gap: 2rem;
+  max-width: 1280px;
+  padding: 0 3rem;
+  margin: 0 auto;
+  line-height: 1.5;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 1rem;
+}
+
+/*intro modal dialog*/
+dialog[open] {
+  background-color: var(--col03);
+  margin: auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+button {
+  background-color: var(--col06);
+  color: var(--col01);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.sliderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+label {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1rem;
+  color: var(--col06);
+}
+
+/*********** Baseline, reset styles ***********/
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 20.5rem;
+}
+
+/* Removes default focus */
+input[type="range"]:focus {
+  outline: none;
+}
+
+/******** Chrome, Safari, Opera and Edge Chromium styles ********/
+/* slider track */
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #1d3e1e;
+  border-radius: 2rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  margin-top: -4px; /* Centers thumb on the track */
+  background-color: #e9f726;
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-webkit-slider-thumb {
+  outline: 3px solid #e9f726;
+  outline-offset: 0.125rem;
+}
+
+/*********** Firefox styles ***********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #1d3e1e;
+  border-radius: 2rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  background-color: #e9f726;
+  border: none; /*Removes extra border that FF applies*/
+  border-radius: 0.5rem;
+  height: 1rem;
+  width: 1rem;
+}
+
+input[type="range"]:focus::-moz-range-thumb {
+  outline: 3px solid #e9f726;
+  outline-offset: 0.125rem;
+}

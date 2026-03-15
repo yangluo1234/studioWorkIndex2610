@@ -1,9 +1,94 @@
+@import url("https://fonts.googleapis.com/css?family=Libre%20Baskerville:700|Libre%20Baskerville:400");
+
+root {
+  /* Colour guide by realtimecolors.com */
+  /* https://www.realtimecolors.com/?colors=022710-ecfef3-078d41-5fd1f7-0c59e9&fonts=Libre%20Baskerville-Libre%20Baskerville */
+  --text: #022710;
+  --background: #ecfef3;
+  --primary: #078d41;
+  --secondary: #5fd1f7;
+  --accent: #0c59e9;
+}
+
+/* this swaps the colour order to account for dark mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #d8fde6;
+    --background: #011308;
+    --primary: #72f8ac;
+    --secondary: #087aa0;
+    --accent: #1664f3;
+    --maxw: 57rem;
+  }
+}
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background-color: black;
-  color: white;
-  
+  margin: 0;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+header {
+  background-color: var(--secondary);
+  padding: 1.5rem 1rem;
+  border-bottom: 0.05rem solid var(--accent);
+  text-align: center;
+}
+
+header h1 {
+  color: var(--text);
+  margin: 0;
+  font-size: 2rem;
+}
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Libre Baskerville";
+  font-weight: 700;
+}
+
+main {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 1.75rem 1rem;
+}
+
+h3 {
+  padding: 1rem 0 0 0;
+}
+
+section {
+  padding: 1rem 0;
+}
+
+p {
+  padding: 1rem 0;
+}
+
+ol,
+ul {
+  padding: revert;
 }
 
 a {
-  color: aqua;
+  color: var(--primary);
+}
+a:hover {
+  color: var(--text);
+  text-decoration: underline;
+}
+
+footer {
+  max-width: 100%;
+  background-color: var(--secondary);
+  color: var(--primary);
+  font-size: 0.75rem;
+  text-align: center;
 }
