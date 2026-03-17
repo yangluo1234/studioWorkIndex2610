@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Libre%20Baskerville:700|Libre%20Baskerville:400");
 
-root {
+:root {
   --bg: #0b0c10;
   --card: #14161b;
   --text: #e8ecf1;
