@@ -1,0 +1,34 @@
+#play-button {
+  width: 5rem;
+  background-color: black;
+  color: white;
+  transition: 2000ms;
+}
+
+#play-button:hover {
+  cursor: pointer;
+  color: brown;
+}
+
+#play-button:active {
+  width: 30rem;
+  color: coral;
+}
+
+#note-button {
+  width: 10rem;
+  background-color: darkblue;
+  color: white;
+  transition: 2000ms;
+}
+
+#note-button:hover {
+  cursor: pointer;
+  color: lightblue;
+}
+
+#note-button:active {
+  width: 30rem;
+  background-color: darksalmon;
+  color: lightyellow;
+}

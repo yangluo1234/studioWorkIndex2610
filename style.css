@@ -1,33 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Libre%20Baskerville:700|Libre%20Baskerville:400");
 
 root {
-  /* Colour guide by realtimecolors.com */
-  /* https://www.realtimecolors.com/?colors=022710-ecfef3-078d41-5fd1f7-0c59e9&fonts=Libre%20Baskerville-Libre%20Baskerville */
-  --text: #022710;
-  --background: #ecfef3;
-  --primary: #078d41;
-  --secondary: #5fd1f7;
-  --accent: #0c59e9;
+  --bg: #0b0c10;
+  --card: #14161b;
+  --text: #e8ecf1;
+  --muted: #9aa3af;
+  --accent: #69c0ff;
+  --maxw: 57reml;
 }
 
-/* this swaps the colour order to account for dark mode */
-@media (prefers-color-scheme: dark) {
-  :root {
-    --text: #d8fde6;
-    --background: #011308;
-    --primary: #72f8ac;
-    --secondary: #087aa0;
-    --accent: #1664f3;
-    --maxw: 57rem;
-  }
-}
 * {
   box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  background-color: var(--background);
+  background-color: var(--bg);
   color: var(--text);
   font-family: "Libre Baskerville", serif;
   font-weight: 400;
@@ -35,14 +23,13 @@ body {
 }
 
 header {
-  background-color: var(--secondary);
+  background-color: var(--card);
   padding: 1.5rem 1rem;
   border-bottom: 0.05rem solid var(--accent);
   text-align: center;
 }
 
 header h1 {
-  color: var(--text);
   margin: 0;
   font-size: 2rem;
 }
@@ -78,7 +65,8 @@ ul {
 }
 
 a {
-  color: var(--primary);
+  color: var(--accent);
+  text-decoration: underline;
 }
 a:hover {
   color: var(--text);
@@ -87,8 +75,9 @@ a:hover {
 
 footer {
   max-width: 100%;
-  background-color: var(--secondary);
+  background-color: var(--muted);
   color: var(--text);
   font-size: 0.75rem;
   text-align: center;
+  border-top: 0.05rem solid var(--accent);
 }
