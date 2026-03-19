@@ -1,3 +1,10 @@
+/*This CSS file is designed to create a playful and colorful visual style for the information design experiment.*/
+/* The body text uses a familiar serif font, while the labels use a sans serif font to make interface text clearer. */
+/* The color palette uses a dark background with bright accent colours to create contrast and make the controls easier to 
+to see. 
+   The dialog uses a lighter background colour to separate it clearly from the main page. 
+*/
+
 /*import font*/
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 

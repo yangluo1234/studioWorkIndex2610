@@ -51,6 +51,9 @@ playButton.addEventListener("mouseleave", endNote);
 //Note button Experiment
 //This button focus on playful feedback through hover, click and reset.
 //play sound with tone and visual feedback ( background color change from red to yellow)
+//setTimeout is used to change the background colour back to yellow after 500ms, creating a visual feedback
+//that indicates the note has been played.
+//This experiment is to explore how visual feedback changes with the sound.
 function playNoteWithFeedback() {
   synth.triggerAttackRelease("C4", "8n");
   document.body.style.backgroundColor = "red";

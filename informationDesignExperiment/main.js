@@ -15,24 +15,24 @@ const range3DefaultValue = 50;
 //// TONE INIT
 // set up our basic synth
 const synth = new Tone.Synth({
-    oscillator: {
-        type: "fatsawtooth",
-        count: 3,
-        spread: 10,
-    },
-    envelope: {
-        attack: 0.01,
-        decay: 0.1,
-        sustain: 0.5,
-        release: 0.1,
-        attackCurve: "exponential",
-    }
+  oscillator: {
+    type: "fatsawtooth",
+    count: 3,
+    spread: 10,
+  },
+  envelope: {
+    attack: 0.01,
+    decay: 0.1,
+    sustain: 0.5,
+    release: 0.1,
+    attackCurve: "exponential",
+  },
 });
 
 // set up our autoPanner and filter effects
 const autoPanner = new Tone.AutoPanner("8n").start();
 autoPanner.set({
-    wet: 0.15
+  wet: 0.15,
 });
 
 const filter = new Tone.Filter(0, "highpass");
@@ -42,13 +42,13 @@ const filter = new Tone.Filter(0, "highpass");
 // the running of statements in a specific manner : for example in the below function
 // we use await to wait until the Tone system has started before running the following
 // statement which connects the synth to the audio output
-async function toneInit(){
-    // "start" the tone audio system
-    await Tone.start();
-    // connect the synth to the audio output via the two effects
-    // the flow of the audio signal looks like this
-    // synth => autoPanner => filter => audio output (Tone.Destination)
-    synth.chain(autoPanner, filter, Tone.Destination);
+async function toneInit() {
+  // "start" the tone audio system
+  await Tone.start();
+  // connect the synth to the audio output via the two effects
+  // the flow of the audio signal looks like this
+  // synth => autoPanner => filter => audio output (Tone.Destination)
+  synth.chain(autoPanner, filter, Tone.Destination);
 }
 
 //// DIALOG INIT
@@ -56,7 +56,7 @@ async function toneInit(){
 introDialog.showModal();
 
 dialogCloseButton.addEventListener("click", () => {
-    introDialog.close();
+  introDialog.close();
 });
 
 introDialog.addEventListener("close", toneInit);
@@ -64,8 +64,8 @@ introDialog.addEventListener("close", toneInit);
 //// SOUND FUNCTIONS
 
 // takes in a number to set as the new volume
-function setVolume(newVolume){
-    synth.set({ volume: newVolume });
+function setVolume(newVolume) {
+  synth.set({ volume: newVolume });
 }
 
 //// UI CONNECTIONS
@@ -74,7 +74,7 @@ function setVolume(newVolume){
 rangeSlider1.value = range1DefaultValue;
 // add eventListener for use changing value
 rangeSlider1.addEventListener("input", () => {
-    setVolume(rangeSlider1.value);
+  setVolume(rangeSlider1.value);
 });
 // trigger change event manually to propagate the default value
 rangeSlider1.dispatchEvent(new Event("input"));
@@ -87,16 +87,18 @@ rangeSlider2.value = range2DefaultValue;
 // of this exercise, leaving them 'uncommented' is appropriate as I want you to
 // concentrate on your interpretation rather than how they actually operate
 rangeSlider2.addEventListener("input", () => {
-    let intValue = Math.floor(rangeSlider2.value);
-    let newCount = clamp(1 + (intValue / 5), 3, 6);
-    let newSpread = intValue * 2;
-    synth.set({oscillator : {
-            count: newCount,
-            spread: newSpread
-        }});
-    autoPanner.set({
-        wet: newSpread / 100
-    });
+  let intValue = Math.floor(rangeSlider2.value);
+  let newCount = clamp(1 + intValue / 5, 3, 6);
+  let newSpread = intValue * 2;
+  synth.set({
+    oscillator: {
+      count: newCount,
+      spread: newSpread,
+    },
+  });
+  autoPanner.set({
+    wet: newSpread / 100,
+  });
 });
 // trigger change event manually to propagate the default value
 rangeSlider2.dispatchEvent(new Event("input"));
@@ -105,32 +107,30 @@ rangeSlider2.dispatchEvent(new Event("input"));
 rangeSlider3.value = range3DefaultValue;
 // add eventListener for use changing value
 rangeSlider3.addEventListener("input", () => {
-    let value = rangeSlider3.value;
-    if(value > 50){
-        filter.set({
-            frequency: clamp(remapRange(value, 60, 100, 0, 6000), 0, 6000),
-            type: "highpass"
-        });
-    } else {
-        filter.set({
-            frequency: clamp(remapRange(value, 0, 40, 0, 20000), 0, 20000),
-            type: "lowpass"
-        });
-    }
-    synth.set({detune: remapRange(value, 0, 100, -1200, 1200)});
+  let value = rangeSlider3.value;
+  if (value > 50) {
+    filter.set({
+      frequency: clamp(remapRange(value, 60, 100, 0, 6000), 0, 6000),
+      type: "highpass",
+    });
+  } else {
+    filter.set({
+      frequency: clamp(remapRange(value, 0, 40, 0, 20000), 0, 20000),
+      type: "lowpass",
+    });
+  }
+  synth.set({ detune: remapRange(value, 0, 100, -1200, 1200) });
 });
 // trigger change event manually to propagate the default value
 rangeSlider3.dispatchEvent(new Event("input"));
 
-
-
 //// HELPER FUNCTIONS
 // these are generic functions used to manipulate numbers
 
-function remapRange(value, min1, max1, min2, max2){
-    return min2 + (max2 - min2) * (value - min1) / (max1 - min1);
+function remapRange(value, min1, max1, min2, max2) {
+  return min2 + ((max2 - min2) * (value - min1)) / (max1 - min1);
 }
 
-function clamp(value, min, max){
-    return Math.min(Math.max(value, min), max);
+function clamp(value, min, max) {
+  return Math.min(Math.max(value, min), max);
 }
