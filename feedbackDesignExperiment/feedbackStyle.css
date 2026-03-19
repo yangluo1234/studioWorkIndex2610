@@ -1,3 +1,9 @@
+/*This CSS file is designed to provide visual feedback 
+for the play button and note button in the feedback design experiment.
+The play button changes its width and colour when hovered and clicked,
+while the note button provides playful feedback through hover and click,
+including scaling and colour changes. The transitions are set to create a smooth visual experience.
+*/
 #play-button {
   width: 5rem;
   background-color: black;
@@ -15,20 +21,28 @@
   color: coral;
 }
 
+/*The note button is designed to provide playful feedback through hover, click.
+  Using hover is to explore the interactive behavior of the button.
+  The transition is set to create a quicker visual response.
+  The scale transformation is used to create a playful effect when the button is clicked. 
+  Using scale can let user experience a more engaging interaction because it 
+  provides clear visual feedback.*/
+
 #note-button {
   width: 10rem;
-  background-color: darkblue;
+  background-color: darkcyan;
   color: white;
-  transition: 2000ms;
+  transition: 100ms;
 }
 
 #note-button:hover {
+  transform: scale(1.05);
   cursor: pointer;
   color: lightblue;
 }
 
 #note-button:active {
-  width: 30rem;
+  transform: scale(0.85);
   background-color: darksalmon;
   color: lightyellow;
 }

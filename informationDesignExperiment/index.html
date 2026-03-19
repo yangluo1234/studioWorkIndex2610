@@ -7,9 +7,14 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
+    <!-- I changed favicon from piano to musical notes because the webpage is about musical information design,
+  and the favicon should reflect the theme of the page.-->
     <title>Information Design Experiment</title>
-    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/favicon-musicalNotes.png"
+    />
 
     <link rel="stylesheet" href="infoDesignReset.css" />
     <link rel="stylesheet" href="infoDesignStyle.css" />
@@ -36,6 +41,7 @@
 
       <!-- !!!! -->
       <!-- These are the three range elements we will be working on for this exercise -->
+      <!--The labels and icons for the sliders help users understand their function-->
       <div class="sliderContainer">
         <label for="var1Range">Volume</label>
         <div class="iconContainer">
@@ -53,7 +59,7 @@
       </div>
 
       <div></div>
-      <label for="var2Range">???</label>
+      <label for="var2Range">Pitch</label>
       <input type="range" id="var2Range" min="1" max="25" step="1" value="5" />
 
       <label for="var3Range">Frequency</label>

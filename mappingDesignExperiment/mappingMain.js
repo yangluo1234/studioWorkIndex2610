@@ -67,6 +67,8 @@ timeInput.addEventListener("input", function () {
 
 //add button to clear the stage
 function clearStage() {
+  //Remove all circles from the stage by destroying the fist layer.
+  //Reference from Konva documentation: https://konvajs.org/api/Konva.Layer.html#destroyChildren
   firstLayer.destroyChildren();
 }
 

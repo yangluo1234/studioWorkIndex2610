@@ -13,9 +13,20 @@ dialogCloseButton.addEventListener("click", () => {
 });
 
 //tone synth init
-const synth = new Tone.Synth().toDestination();
+const synth = new Tone.Synth({
+  oscillator: {
+    type: "sine",
+  },
+  envelope: {
+    attack: 0.1,
+    decay: 0.2,
+    sustain: 0.5,
+    release: 1,
+  },
+}).toDestination();
 
 //play sound with tone
+//This button will play a note when clicked.
 function playNote() {
   synth.triggerAttackRelease("C4", "8n");
 }
@@ -25,6 +36,7 @@ function playNote() {
 function startNote() {
   synth.triggerAttack("C4");
   document.body.style.backgroundColor = "lightblue";
+  //Add a class to the button to indicate it's pressed, which can be styled with CSS for visual feedback.
 }
 
 function endNote() {
@@ -34,8 +46,10 @@ function endNote() {
 
 playButton.addEventListener("mousedown", startNote);
 playButton.addEventListener("mouseup", endNote);
+playButton.addEventListener("mouseleave", endNote);
 
 //Note button Experiment
+//This button focus on playful feedback through hover, click and reset.
 //play sound with tone and visual feedback ( background color change from red to yellow)
 function playNoteWithFeedback() {
   synth.triggerAttackRelease("C4", "8n");
@@ -44,6 +58,9 @@ function playNoteWithFeedback() {
     document.body.style.backgroundColor = "yellow";
   }, 500);
 }
+//Reset background colour to white.
+//I chose to reset the background colour to white because it provides
+//a clean feel and allows the feedback colours (red and yellow during note play)to stand out more clearly.
 
 function resetBackground() {
   document.body.style.backgroundColor = "white";
@@ -51,4 +68,5 @@ function resetBackground() {
 //when mouse leaves the button, reset background color to white
 noteButton.addEventListener("mouseleave", resetBackground);
 
+//when button is clicked, play note and change background color for feedback
 noteButton.addEventListener("click", playNoteWithFeedback);
