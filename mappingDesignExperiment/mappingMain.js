@@ -49,6 +49,8 @@ circleButton.addEventListener("click", drawNewCircle);
 //the background colour will be white and the circle colour will be red like day and sun.
 //When the time is between 18pm to 6am,
 // the background colour will be black and the circle colour will be yellow like night and moon.
+//I chose this interaction design because it is simple and makes use of the time input to create a clear mapping
+//between the time of day and the visual elements on the stage, which can enhance the user experience.
 
 //add interaction to the time input with colour change based on the day and night time
 timeInput.addEventListener("input", function () {
