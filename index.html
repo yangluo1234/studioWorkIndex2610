@@ -31,144 +31,205 @@
     </header>
     <main class="container">
       <section>
-        <h2>Design Experiments</h2>
+        <h2>Previous Assignment Review</h2>
         <nav>
-          <a href="./informationDesignExperiment" target="_blank"
-            >Information Design Experiment</a
-          >
-
-          <a href="./feedbackDesignExperiment" target="_blank"
-            >Feedback Experiment</a
-          >
-
-          <a href="./mappingDesignExperiment" target="_blank"
-            >Mapping Experiment</a
+          <a href="./at1ProjectSpeculation/" target="_blank"
+            >A1: Project Speculation</a
           >
         </nav>
       </section>
 
-      <h2>Studio Project Speculation</h2>
+      <h2>Design Development And Prototyping</h2>
+      <section>
+        <nav>
+          <a href="https://bubblebloom-prototype.netlify.app/" target="_blank">
+            Bubble Bloom Prototype
+          </a>
+          <a href="https://forms.office.com/r/7JQgnVyDDe" target="_blank">
+            Peer User Testing Form
+          </a>
+        </nav>
+      </section>
       <section class="card">
-        <h3>Overview</h3>
+        <h3>Conceptual Response</h3>
         <p>
-          Bubble Bloom is a small browser-based audiovisual tool built around
-          colour, sound, and playful interaction. The project begins with a soft
-          and neutral canvas that gradually becomes livelier as the user bursts
-          coloured bubbles across the screen. Each burst releases colour and
-          short playful sounds, allowing the surface to shift from quiet and
-          minimal to active and expressive. Rather than functioning as a formal
-          drawing tool or music-making application, the project is framed as a
-          light and accessible tool. The main idea is to explore how simple,
-          repeated interactions can gradually transform the canvas in a playful,
-          low-pressure way.
+          Bubble Bloom is a small browser-based project that explores playful
+          and low-pressure making through colour, shape, and sound. It is
+          influenced by interactive experiences that let users experiment freely
+          without needing advanced drawing or music skills. Instead of working
+          like a normal drawing app, Bubble Bloom lets users place colourful
+          shapes onto a full-screen canvas and activate them through a second
+          click, turning them into bursts of colour and sound. The project
+          starts from the idea that making something expressive online should
+          feel approachable and enjoyable, rather than controlled by technical
+          skill or the pressure of making something correct.
+        </p>
+        <p>
+          The main interaction design principles in Bubble Bloom are feedback
+          and mapping. Feedback appears as immediate visual and audio responses
+          after each action, which helps the project feel responsive, clear, and
+          satisfying to use. Mapping emerges from the relationship among shape
+          selection, colour selection, click position, and the resulting burst.
+          These choices gradually affect the final visual result, so the user
+          can build something personal through repeated interaction. Earlier
+          design experiments were important in shaping this direction,
+          especially in showing how simple actions can feel richer when visible
+          change and response are clearly connected. My earlier project framing
+          already identified feedback and mapping as important interaction
+          design principles, but the current prototype applies them in a more
+          focused and practical way.
+        </p>
+        <p>
+          The most distinctive part of Bubble Bloom is its two-step interaction.
+          Instead of drawing directly onto the canvas, the user first places a
+          shape and then clicks it again to trigger the burst. This changes the
+          project from a simple visual effect into a system of placing and
+          activating. The interaction feels less automatic and gives the project
+          a clearer identity because the user is deciding where to place visual
+          potential and when to release it. In this way, Bubble Bloom sits
+          somewhere between drawing, pattern making, and playful audiovisual
+          interaction.
         </p>
       </section>
       <section class="card">
-        <h3>Purpose</h3>
+        <h3>Technical Approach</h3>
+        <figure class="technical-item">
+          <img src="assets/Bubble Bloom System Map.png" alt="System Map" />
+          <figcaption>Bubble Bloom System Map</figcaption>
+        </figure>
         <p>
-          The purpose of Bubble Bloom is to let users create a personal
-          audiovisual composition through simple interaction with coloured
-          bubbles. When the user clicks a bubble, colour spreads across the
-          canvas, and short playful sounds are triggered. The interaction is
-          intended to feel immediate and easy to use, so that users can explore
-          the tool without needing drawing skills, musical knowledge, or a clear
-          plan before starting. Instead of focusing on a correct result, the
-          project encourages playful experimentation and gradual creation.
+          Bubble Bloom is currently developed as a browser-based prototype using
+          HTML, CSS, and JavaScript, with Konva.js and Tone.js supporting the
+          main interaction. HTML is used to structure the page, while CSS styles
+          the toolbar, page layout, and visual hierarchy. JavaScript manages
+          interaction logic and state changes. In addition, Konva.js is used to
+          build the full-screen canvas, place shapes, and handle burst animation
+          more effectively than relying only on standard DOM elements. Tone.js
+          is used to add sound feedback so that visual interaction can also be
+          reinforced through audio. This approach keeps the prototype visually
+          clear while supporting the project’s audiovisual direction.
         </p>
         <p>
-          My early interactive experiments have also shaped this purpose. The
-          feedback experiment suggested that simple actions could feel more
-          engaging when they were supported by clear visual and sound responses.
-          The mapping experiment was also useful because it showed how colour
-          and position could be connected through interaction. As a result,
-          Bubble Bloom is being developed as a light and accessible creative
-          tool that values direct interaction, immediacy, and low-pressure
-          making.
+          The prototype currently focuses on a small set of core features that
+          support the main interaction loop. Users can select a shape and
+          colour, place the shape onto the canvas, and click it again to trigger
+          a burst of colour and sound. Additional controls, such as canvas
+          background options, clear, and save functions, help the project feel
+          more like a usable interactive system rather than only a visual
+          effect. These technical choices directly support the project’s
+          conceptual focus on feedback and mapping.
+        </p>
+        <p>
+          At this stage, the prototype is intentionally limited in scope. Rather
+          than trying to build a full version application, the current version
+          concentrates on testing whether the place-first, burst-second
+          interaction is working clearly and effectively. More advanced
+          features, such as stronger sound feedback, additional shape
+          behaviours, and wider expressive controls, are being treated as future
+          development. In addition, the attached system map is used to show how
+          user input, stored settings, canvas interaction, and visual and audio
+          output are connected.
+        </p>
+      </section>
+      <section id="feedback" class="card">
+        <h3>Peer User Testing Reflection</h3>
+        <div class="feedback-grid">
+          <figure class="feedback-item">
+            <img src="assets/feedback_1.png" alt="Feedback 1 screenshot" />
+            <figcaption>Figure 1.</figcaption>
+          </figure>
+          <figure class="feedback-item">
+            <img src="assets/feedback_2.png" alt="Feedback 2 screenshot" />
+            <figcaption>Figure 2.</figcaption>
+          </figure>
+        </div>
+
+        <p>
+          Peer user testing showed that Bubble Bloom was generally easy to
+          understand, but some parts of the interaction were still not fully
+          clear. <strong>Figure 1.</strong> suggests that while many users
+          understood that placed shapes could be clicked again to burst, a
+          noticeable number of users were still unsure. This indicates that the
+          issue is not only. The visibility of the instruction text, but also
+          the visual communication of the interactive shapes themselves. At the
+          moment, once a shape is placed on the canvas, it may not look
+          clickable enough, so the second-step interaction is not always
+          obvious.
+        </p>
+        <p>
+          Based on the feedback, I would improve the prototype in two ways.
+          First, I would make the instructions more visible through a clearer
+          placement, stronger text hierarchy, or a short pop-up dialogue when
+          the page opens. Second, I would strengthen the hover effect of placed
+          shapes so that users receive a clearer sign that the shape can be
+          clicked again. For example, the shape could slightly enlarge, gain a
+          stronger outline or glow, and show a pointer cursor on hover. These
+          changes would improve learnability and make the interaction feel more
+          intuitive.
+        </p>
+        <p>
+          In addition, <strong>Figure 2.</strong> showed that many users wanted
+          the prototype to feel more playful and expressive. Because of this, I
+          also want to develop richer sound effects and improve the save
+          function so that only the drawing area is exported, rather than
+          including the toolbar area. Overall, the feedback suggested that the
+          next stage should focus less or adding random features and more on
+          improving clarity, feedback, and the quality of the final output.
         </p>
       </section>
       <section class="card">
-        <h3>Worth</h3>
+        <h3>Project Timeline</h3>
+        <h4>Week 1 - Week 6</h4>
         <p>
-          The project Bubble Bloom is worth exploring because it presents
-          creativity in a more accessible and playful way. Many digital creative
-          tools are designed for users who already feel confident in drawing,
-          music, or other creative skills. As a result, these tools can
-          sometimes feel difficult to approach. In contrast, Bubble Bloom is
-          intended to offer a lighter form of interaction, where users can take
-          part in making something colourful and expressive without the pressure
-          of skill or correctness. The repeated action of bursting bubbles is
-          also designed to be satisfying and stress-relieving, like the
-          repetitive tactile play.
+          Bubble Bloom began as a small browser-based idea focused on playful
+          visual interaction through colour, shape, and sound. In the early
+          stage, the project was mainly interested in simple burst effects and
+          immediate feedback. The aim was to create a low-pressure experience
+          where users could make expressive outcomes without needing advanced
+          drawing skills.
         </p>
         <p>
-          Furthermore, the information design experiment was important in
-          shaping this value because it showed how colour, contrast, and layout
-          could make a digital interface feel both readable and playful. This
-          became relevant to this project, Bubble Bloom, where a soft canvas and
-          bright bubbles need to feel visually engaging without becoming
-          confusing. Several creative tools have also helped develop this sense
-          of value. For example,
-          <a
-            href="https://creatability.withgoogle.com/sound-canvas/"
-            target="_blank"
-            >Sound Canvas</a
-          >
-          shows how a digital interface can become playful when sound is
-          produced through direct interaction.
-          <a
-            href="https://musiclab.chromeexperiments.com/Song-Maker/"
-            target="_blank"
-            >Song Maker</a
-          >
-          demonstrates that a simple interaction can still support creativity
-          without requiring advanced musical knowledge. Among the provided
-          examples,
-          <a href="https://www.patatap.com/" target="_blank">Patatap</a>
-          shows how immediate audiovisual feedback can make simple input feel
-          expressive and enjoyable.
-          <a href="https://ash-k.itch.io/tile-toy" target="_blank">Tile Toy</a>
-          also presents how colour and repetition can still lead to personal
-          outcomes. In addition,
-          <a href="https://splatoon.nintendo.com/" target="_blank">Splatoon</a>
-          has influenced the visual direction of the project through its
-          satisfying use of colour spreading across a surface. Although Bubble
-          Bloom is not a game, that playful sense of colour taking over a space
-          has been an important influence on how this project is being
-          developed.
-        </p>
-      </section>
-      <section class="card">
-        <h3>Framing</h3>
-        <p>
-          Bubble Bloom is framed as a limited single-page creative tool rather
-          than a full drawing or music-making application. The main idea is to
-          explore how simple repeated interaction can gradually transform the
-          canvas in a playful and low-pressure way. For this reason, the project
-          is built around one core loop: clicking a coloured bubble, bursting
-          it, spreading colour across the canvas, and triggering short playful
-          sounds. This framing keeps the project focused on immediate feedback,
-          visible transformation after each bubble burst, and a playful
-          audiovisual experience that feels light and stress-relieving, rather
-          than a complex tool that requires skill or learning to use.
+          As the project developed, the prototype was built using HTML, CSS,
+          JavaScript, Konva.js, and Tone.js. This stage established the
+          technical foundation of the project, including canvas based
+          interaction, burst animation, and basic sound response. However, the
+          early version still felt closer to a visual effect than a creative
+          tool.
         </p>
         <p>
-          The three in-class experiments provided an opportunity to test
-          different forms of interaction. Through this process, it became clear
-          that simple and immediate feedback, especially when visual and sound
-          responses were combined, could make the overall experience feel more
-          playful, satisfying and enjoyable for the user. In addition,
-          <a
-            href="https://musiclab.chromeexperiments.com/Song-Maker/"
-            target="_blank"
-            >Song Maker</a
-          >
-          helped show how a digital interface can remain simple while still
-          supporting creative participation, but Bubble Bloom is framed less as
-          a song-making tool and more as a playful colour & sound tool. As a
-          result, this project, Bubble Bloom, is framed mainly around the
-          interaction design principle of feedback and mapping through the
-          relationship between bubble colour, sound type, and the position of
-          bursts across the canvas.
+          A major change happened when the interaction was revised from an
+          immediate burst system into a two-step process. Instead of bursting
+          directly on click, users now place a shape first and click it again to
+          trigger the burst. This was an important deviation from the initial
+          plan. The earlier interaction was simpler, but it felt too automatic.
+          The revised version made the project feel more deliberate and gave it
+          a clearer identity as an interactive expressive tool.
+        </p>
+        <h4>Week 7</h4>
+        <p>
+          After the prototype was developed, peer user testing was carried out
+          to evaluate clarity, engagement, and possible improvements. The
+          feedback showed that the project was generally seen as playful,
+          colourful, creative, and visually interesting. At the same time, it
+          also revealed several problems. Some users were not fully clear that
+          placed shapes could be clicked again to burst, which suggests that the
+          interaction still needs stronger instruction and visual guidance.
+          Other responses suggested improving the sound design, increasing
+          variation, and refining the save function so that only the canvas area
+          is exported.
+        </p>
+        <h4>Week 8 - Week 10</h4>
+        <p>
+          The next stage of development will focus on refinement rather than
+          changing the concept completely. The first priority is to improve
+          clarity by making the instruction text more visible and by
+          strengthening the hover effect on placed shapes so they look clearly
+          interactive. The second priority is to make the sound effect more fun,
+          playful, and satisfying. The third priority is to improve the save
+          function so that only the drawing area is exported, rather than
+          including blank space caused by the toolbar area. These changes will
+          help move Bubble Bloom from a functional prototype toward a more
+          resolved and polished final version.
         </p>
       </section>
     </main>
