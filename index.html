@@ -27,7 +27,7 @@
   </head>
   <body>
     <header>
-      <h1>Studio Work Index</h1>
+      <h1>Bubble Bloom - Studio Work Index</h1>
     </header>
     <main class="container">
       <section>
@@ -45,199 +45,373 @@
             >A1: Project Speculation</a
           >
         </nav>
-      </section>
-
-      <h2>Design Development And Prototyping</h2>
-      <section>
         <nav>
-          <a href="https://bubblebloom-prototype.netlify.app/" target="_blank">
-            Bubble Bloom Prototype
-          </a>
-          <a href="https://forms.office.com/r/7JQgnVyDDe" target="_blank">
-            Peer User Testing Form
-          </a>
+          <a href="at2ProjectDevelopment/" target="_blank"
+            >A2: Project Development and Prototyping</a
+          >
         </nav>
       </section>
+
+      <h2>Studio Project Reflection</h2>
+
       <section class="card">
-        <h3>Conceptual Response</h3>
+        <h2>How the Final Design Meets My Initial Judgement of Purpose</h2>
         <p>
-          Bubble Bloom is a small browser-based project that explores playful
-          and low-pressure making through colour, shape, and sound. It is
-          influenced by interactive experiences that let users experiment freely
-          without needing advanced drawing or music skills. Instead of working
-          like a normal drawing app, Bubble Bloom lets users place colourful
-          shapes onto a full-screen canvas and activate them through a second
-          click, turning them into bursts of colour and sound. The project
-          starts from the idea that making something expressive online should
-          feel approachable and enjoyable, rather than controlled by technical
-          skill or the pressure of making something correct.
+          My initial purpose for Bubble Bloom was to create a highly interactive
+          and enjoyable digital tool that felt colourful, playful, and easy to
+          use. I wanted each user action to produce immediate feedback, both
+          visually and sonically, so that the process of making an image would
+          feel lively rather than static. I was also interested in creating a
+          low-pressure experience, where users could make an artwork without
+          needing detailed drawing skills.
         </p>
         <p>
-          The main interaction design principles in Bubble Bloom are feedback
-          and mapping. Feedback appears as immediate visual and audio responses
-          after each action, which helps the project feel responsive, clear, and
-          satisfying to use. Mapping emerges from the relationship among shape
-          selection, colour selection, click position, and the resulting burst.
-          These choices gradually affect the final visual result, so the user
-          can build something personal through repeated interaction. Earlier
-          design experiments were important in shaping this direction,
-          especially in showing how simple actions can feel richer when visible
-          change and response are clearly connected. My earlier project framing
-          already identified feedback and mapping as important interaction
-          design principles, but the current prototype applies them in a more
-          focused and practical way.
+          The final design reflects several important parts of this initial
+          purpose, especially in terms of colour, feedback, and ease of
+          interaction. Users can choose different shapes and colours, place them
+          on the canvas, hold to grow them, and click again to burst them into
+          smaller pieces. These interactions, together with animation and sound
+          feedback, create a tool that is visually colourful and clearly
+          interactive. The option to switch between light and dark canvas
+          backgrounds, and the ability to save and download the final image,
+          also support the idea of personal and playful image making.
         </p>
         <p>
-          The most distinctive part of Bubble Bloom is its two-step interaction.
-          Instead of drawing directly onto the canvas, the user first places a
-          shape and then clicks it again to trigger the burst. This changes the
-          project from a simple visual effect into a system of placing and
-          activating. The interaction feels less automatic and gives the project
-          a clearer identity because the user is deciding where to place visual
-          potential and when to release it. In this way, Bubble Bloom sits
-          somewhere between drawing, pattern making, and playful audiovisual
-          interaction.
+          However, I do not think the final design fully achieved the experience
+          I originally wanted. While it successfully created colour, movement,
+          and feedback, it was less successful in creating a deeper sense of
+          enjoyment and stress relief that inspired the project. The interaction
+          became repetitive more quickly than I expected, and the results
+          sometimes felt too limited to sustain a strong sense of discovery.
+          Through this, I learned that a playful tool is not defined only by
+          bright visuals or responsive effects, but by whether the interaction
+          can remain varied, readable, and satisfying over time.
         </p>
       </section>
       <section class="card">
-        <h3>Technical Approach</h3>
-        <figure class="technical-item">
-          <img src="assets/Bubble Bloom System Map.png" alt="System Map" />
-          <figcaption>Bubble Bloom System Map</figcaption>
-        </figure>
+        <h2>
+          How the Values Identified in My Initial Judgement of Worth Are
+          Embodied in My Final Design
+        </h2>
         <p>
-          Bubble Bloom is currently developed as a browser-based prototype using
-          HTML, CSS, and JavaScript, with Konva.js and Tone.js supporting the
-          main interaction. HTML is used to structure the page, while CSS styles
-          the toolbar, page layout, and visual hierarchy. JavaScript manages
-          interaction logic and state changes. In addition, Konva.js is used to
-          build the full-screen canvas, place shapes, and handle burst animation
-          more effectively than relying only on standard DOM elements. Tone.js
-          is used to add sound feedback so that visual interaction can also be
-          reinforced through audio. This approach keeps the prototype visually
-          clear while supporting the project’s audiovisual direction.
+          The main values I wanted Bubble Bloom to embody were playfulness,
+          low-pressure creativity, and immediate feedback. These values were
+          important to me because I did not want the project to feel like a
+          technical drawing tool. Instead, I wanted it to feel approachable,
+          enjoyable, and expressive, even for users without strong drawing
+          skills.
         </p>
         <p>
-          The prototype currently focuses on a small set of core features that
-          support the main interaction loop. Users can select a shape and
-          colour, place the shape onto the canvas, and click it again to trigger
-          a burst of colour and sound. Additional controls, such as canvas
-          background options, clear, and save functions, help the project feel
-          more like a usable interactive system rather than only a visual
-          effect. These technical choices directly support the project’s
-          conceptual focus on feedback and mapping.
+          Playfulness was most clearly embodied in the project’s visual
+          language. The bright colour palette, simple shapes, burst animation,
+          and sound effects all contributed to a colourful and active interface.
+          However, reflecting on the final design, I now think that playfulness
+          was embodied more strongly at the surface level than at the
+          interaction level. At first, I understood playfulness mainly as a
+          visual quality expressed through colour, cuteness, and surface style,
+          but I learned that in an interactive tool, playfulness also depends on
+          variation, unpredictability, and the feeling that interaction itself
+          remains enjoyable over time.
         </p>
         <p>
-          At this stage, the prototype is intentionally limited in scope. Rather
-          than trying to build a full version application, the current version
-          concentrates on testing whether the place-first, burst-second
-          interaction is working clearly and effectively. More advanced
-          features, such as stronger sound feedback, additional shape
-          behaviours, and wider expressive controls, are being treated as future
-          development. In addition, the attached system map is used to show how
-          user input, stored settings, canvas interaction, and visual and audio
-          output are connected.
+          Low-pressure creativity was embodied through the simplicity of the
+          controls. Users can place, grow, and burst shapes without needing
+          detailed drawing skill, and they can save and download their artwork
+          afterwards. This supported my aim of making image creation feel more
+          accessible. At the same time, I learned that reducing complexity is
+          not enough by itself. When the interaction feels repetitive or the
+          results feel limited, a tool can still become flat rather than
+          freeing. This helped me understand that low-pressure design also
+          depends on the quality and variety of the experience.
+        </p>
+        <p>
+          Immediate feedback was one of the most successfully embodied values in
+          the project. Visual change, sound, hover cues, and movement all helped
+          make the interaction feel reactive and legible. Users could clearly
+          see and hear that their actions had an effect. However, I also learned
+          that feedback alone is not enough to sustain engagement. It helps
+          users understand the system, but a stronger variation is needed to
+          make that interaction remain meaningful.
+        </p>
+        <p>
+          Overall, this reflection showed me that the values I identified at the
+          beginning were present in the final design, but not always at the
+          depth I intended. Bubble Bloom looks playful, feels responsive, and
+          lowers the barrier to creating images, but it also revealed to me that
+          values are not expressed only through appearance. They need to be
+          fully supported by the interaction itself.
         </p>
       </section>
       <section id="feedback" class="card">
-        <h3>Peer User Testing Reflection</h3>
-        <div class="feedback-grid">
-          <figure class="feedback-item">
-            <img src="assets/feedback_1.png" alt="Feedback 1 screenshot" />
-            <figcaption>Figure 1.</figcaption>
-          </figure>
-          <figure class="feedback-item">
-            <img src="assets/feedback_2.png" alt="Feedback 2 screenshot" />
-            <figcaption>Figure 2.</figcaption>
-          </figure>
-        </div>
+        <h2>
+          How I Approached My Chosen Interaction Design Principles in a Novel
+          Way
+        </h2>
 
         <p>
-          Peer user testing showed that Bubble Bloom was generally easy to
-          understand, but some parts of the interaction were still not fully
-          clear. <strong>Figure 1.</strong> suggests that while many users
-          understood that placed shapes could be clicked again to burst, a
-          noticeable number of users were still unsure. This indicates that the
-          issue is not only. The visibility of the instruction text, but also
-          the visual communication of the interactive shapes themselves. At the
-          moment, once a shape is placed on the canvas, it may not look
-          clickable enough, so the second-step interaction is not always
-          obvious.
+          The interaction design principles I focused on in Bubble Bloom were
+          feedback and mapping. At the beginning, I thought I was already using
+          these two principles clearly, because every interaction had some kind
+          of response. Placing, growing, and bursting shapes all had animation
+          and sound, and Different shapes also had slightly different sound
+          identities. At that stage, I felt that if each function had feedback
+          and mapping, then the interaction design principles were already
+          present in the project.
         </p>
         <p>
-          Based on the feedback, I would improve the prototype in two ways.
-          First, I would make the instructions more visible through a clearer
-          placement, stronger text hierarchy, or a short pop-up dialogue when
-          the page opens. Second, I would strengthen the hover effect of placed
-          shapes so that users receive a clearer sign that the shape can be
-          clicked again. For example, the shape could slightly enlarge, gain a
-          stronger outline or glow, and show a pointer cursor on hover. These
-          changes would improve learnability and make the interaction feel more
-          intuitive.
+          However, after reflecting on the outcome, I realised that I had
+          applied these principles in a surface-level way. Feedback was there,
+          but mostly in a functional sense. It helped users recognise that an
+          action had happened, but it did not always make the experience feel
+          more emotional, satisfying, or memorable. In the same way, mapping was
+          present, but it was also quite direct and mechanical. Different shapes
+          had different sounds, and hold to grow had a matching growth sound,
+          but these relationships did not always deepen the interaction as much
+          as I intended.
         </p>
         <p>
-          In addition, <strong>Figure 2.</strong> showed that many users wanted
-          the prototype to feel more playful and expressive. Because of this, I
-          also want to develop richer sound effects and improve the save
-          function so that only the drawing area is exported, rather than
-          including the toolbar area. Overall, the feedback suggested that the
-          next stage should focus less or adding random features and more on
-          improving clarity, feedback, and the quality of the final output.
+          One more novel aspect of the project was that image-making was
+          structured through stages of interaction rather than direct drawing.
+          Instead of only placing a shape, the user could place it, hold to grow
+          it, and then click again to burst it into smaller scattered pieces.
+          This made a transformation part of the creative process itself, rather
+          than just a secondary effect. I think this was one of the more
+          successful parts of the interaction design, because it made the tool
+          feel more active and distinct from a simple shape-placement tool.
+        </p>
+        <p>
+          At the same time, reflection showed me that adding more interaction
+          does not automatically make the tool more playful or more successful.
+          What was missing was a deeper use of feedback and mapping to shape the
+          feeling of the experience. For example, feedback could have been more
+          emotional rather than only functional. After a burst, the scattered
+          droplets could also have produced softer trailing sounds, so the burst
+          would feel more real and more extended instead of ending too quickly.
+          Mapping could also have been pushed further. For example, placing
+          shapes in different areas of the canvas could have changed the pitch
+          of the sound, which would not only create a clearer relationship
+          between action and result, but also encourage more curiosity and
+          exploration.
+        </p>
+        <p>
+          From this experience, I learned that feedback and mapping are not
+          meaningful simply because they exist in a system. They become
+          meaningful when they shape mood, variation, and user engagement. If
+          sound is added, it should not only confirm that an action has
+          happened. It should contribute to the feeling of the interaction
+          itself. This reflection helped me understand that stronger interaction
+          design is not just about making a system responsive, but about making
+          that responsiveness feel purposeful and enjoyable over time.
         </p>
       </section>
       <section class="card">
-        <h3>Project Timeline</h3>
-        <h4>Week 1 - Week 6</h4>
+        <h2>
+          Documentation and Discussion of Design Judgment Through Exploration
+        </h2>
+        <h4>Design Judgment 1: Improving Burst Discoverability</h4>
         <p>
-          Bubble Bloom began as a small browser-based idea focused on playful
-          visual interaction through colour, shape, and sound. In the early
-          stage, the project was mainly interested in simple burst effects and
-          immediate feedback. The aim was to create a low-pressure experience
-          where users could make expressive outcomes without needing advanced
-          drawing skills.
+          One design judgment came from user feedback. During testing, some
+          users did not realise that they could click a placed shape again to
+          burst it. This showed me that the burst interaction was not
+          discoverable enough. I explored several options to make this clearer,
+          including adding a stronger hover effect, using an outer stroke, and
+          testing a growing visual cue.
         </p>
         <p>
-          As the project developed, the prototype was built using HTML, CSS,
-          JavaScript, Konva.js, and Tone.js. This stage established the
-          technical foundation of the project, including canvas based
-          interaction, burst animation, and basic sound response. However, the
-          early version still felt closer to a visual effect than a creative
-          tool.
+          In the end, I chose to use stroke and hover as the main solution. This
+          was the most suitable option because the buttons in the tool already
+          used stroke, so it matched the existing design language and felt
+          visually consistent. This decision was partly successful, because it
+          made the interface clearer without changing the overall style too
+          much. From this, I learned that discoverability is not only about
+          making an effect more obvious. It also depends on whether the cue
+          feels natural within the whole visual system.
+        </p>
+        <h4>Design Judgment 2: Choosing Light and Dark Canvas Modes</h4>
+        <p>
+          Another design judgment involved the canvas design. Earlier in
+          development, I explored several different background styles, including
+          grid-like and notebook-style canvases, because I wanted the tool to
+          feel like a place for making images. However, after testing these
+          directions, I realised that they did not work especially well with the
+          colourful palette of the tool.
         </p>
         <p>
-          A major change happened when the interaction was revised from an
-          immediate burst system into a two-step process. Instead of bursting
-          directly on click, users now place a shape first and click it again to
-          trigger the burst. This was an important deviation from the initial
-          plan. The earlier interaction was simpler, but it felt too automatic.
-          The revised version made the project feel more deliberate and gave it
-          a clearer identity as an interactive expressive tool.
+          I then shifted toward offering light and dark canvas modes instead.
+          This decision was more successful because it allowed the same colours
+          and shapes to create different moods. On a light canvas, the result
+          felt brighter and more playful, while on a dark canvas, the colours
+          appeared more vivid and dramatic. This helped me understand that the
+          background is not only a visual setting, but part of the emotional
+          tone of the tool. I learned that small design changes can strongly
+          affect how users read the same interaction and image differently.
         </p>
-        <h4>Week 7</h4>
+        <h4>Design Judgment 3: Refining Sound Design</h4>
         <p>
-          After the prototype was developed, peer user testing was carried out
-          to evaluate clarity, engagement, and possible improvements. The
-          feedback showed that the project was generally seen as playful,
-          colourful, creative, and visually interesting. At the same time, it
-          also revealed several problems. Some users were not fully clear that
-          placed shapes could be clicked again to burst, which suggests that the
-          interaction still needs stronger instruction and visual guidance.
-          Other responses suggested improving the sound design, increasing
-          variation, and refining the save function so that only the canvas area
-          is exported.
+          The third design judgement was about sound design. At the beginning, I
+          wanted the sounds to be short, sharp, and more directly connected to
+          the bursting action. My intention was to make the interaction feel
+          quick and satisfying. However, after testing this direction, I found
+          that the result sounded unpleasant and too similar to a basic mouse
+          click. It created functional feedback, but it did not add much
+          character to the experience.
         </p>
-        <h4>Week 8 - Week 10</h4>
         <p>
-          The next stage of development will focus on refinement rather than
-          changing the concept completely. The first priority is to improve
-          clarity by making the instruction text more visible and by
-          strengthening the hover effect on placed shapes, so they look clearly
-          interactive. The second priority is to make the sound effect more fun,
-          playful, and satisfying. The third priority is to improve the save
-          function so that only the drawing area is exported, rather than
-          including blank space caused by the toolbar area. These changes will
-          help move Bubble Bloom from a functional prototype toward a more
-          resolved and polished final version.
+          I then explored a different direction by adding more reverb and
+          allowing the sounds to feel slightly longer and softer. This decision
+          was more successful because it made the sounds feel richer and more
+          recognisable, rather than purely mechanical. It also helped the
+          interaction feel more textured and less abrupt. From this process, I
+          learned that sound design is not only about confirming that an action
+          has happened. It also shapes the mood and identity of the interaction,
+          and can make the tool feel either flat or memorable.
+        </p>
+      </section>
+      <section class="card">
+        <h2>My Finalised Project Production Timeline and How I Navigated It</h2>
+        <p>
+          In the early stage of Bubble Bloom, I already had a concept and
+          general direction, so the project quickly moved from idea development
+          into implementation. At first, I was mainly thinking about what
+          functions the tool needed, what visual style it should have, and how
+          to make it feel more like a complete tool rather than just a small
+          interaction. The early prototype only allowed users to place a shape
+          and then click it again to burst it.
+        </p>
+        <p>
+          After the peer feedback session, I realised that the first version
+          felt too repetitive, and some users did not even realise that they
+          could click again to trigger the burst. This feedback changed my
+          priorities. Instead of continuing to add more decorative elements, I
+          decided to focus on variation and interaction clarity. That was when I
+          spent more time developing hold to grow, because I felt it could add
+          more interest in a way that still matched the playful direction of the
+          project better than a traditional size slider.
+        </p>
+        <p>
+          I also chose to prioritise sound refinement, because I felt the
+          interaction still lacked texture. I did not want the tool to rely only
+          on visual change, so I explored sounds that could make the grow and
+          burst actions feel more distinctive. However, by the final stage of
+          the project, I realised that I had navigated the process with too much
+          focus on implementation. I was adding functions and solving coding
+          problems, but I was not always asking whether those changes were
+          improving the experience itself.
+        </p>
+        <p>
+          Through this process, I learned that navigating a design project is
+          not only about following a schedule or adding more features after
+          feedback. It also means knowing what to prioritise, what to leave out,
+          and when to shift attention back from technical problem-solving to the
+          interaction itself. In the end, the most important lesson for me was
+          that a project can become more functional without necessarily becoming
+          more meaningful and managing that difference is part of the design
+          process.
+        </p>
+      </section>
+      <section class="card">
+        <h2>The Aspect of Design I Am Most Proud of</h2>
+        <p>
+          The aspect of Bubble Bloom I am most proud of is that it allows users
+          to create their own colourful artwork through very simple interaction.
+          Users do not need detailed drawing skill or technical knowledge. By
+          placing, growing, and bursting shapes, they can gradually create an
+          image that feels personal and expressive.
+        </p>
+        <p>
+          I am most proud of this because it reflects one of my original
+          intentions for the project. I did not want Bubble Bloom to feel like a
+          tool that required precision or artistic training. Instead, I wanted
+          it to feel more approachable and low-pressure, so that users could
+          focus on interaction and experimentation rather than correctness. In
+          particular, the burst interaction helped turn simple placement into a
+          more active and transformable process, which made the artwork feel
+          less fixed and more playful. The combination of simple shapes,
+          colourful visuals, and transformation made it possible for users to
+          create something that still looked like an artwork, even though the
+          system itself was quite simple.
+        </p>
+        <p>
+          Although I became critical of some parts of the final project, I still
+          think this aspect was successful. It showed me that even very simple
+          interactions can support creativity when they are clear and visually
+          rewarding. This is the part of the project that still feels most
+          aligned with my original design intention, and it is the part that I
+          would most want to keep and develop further in the future.
+        </p>
+      </section>
+      <section class="card">
+        <h2>The Aspect of Design I Found Most Challenging</h2>
+        <p>
+          One of the most challenging aspects of Bubble Bloom was technical
+          performance. The project was designed to let users keep placing
+          shapes, bursting them, and gradually creating their own colourful
+          artwork. This was also connected to the idea of stress relief, because
+          repeated interaction and visual accumulation were meant to feel
+          satisfying. However, when too many shapes were placed on the canvas,
+          the system became noticeably slower. This reduced the pleasure of
+          using the tool, because once the interaction lost smoothness, it also
+          lost some of its intended relaxing and creative quality. At the time,
+          I was not able to solve this fully, but after the project I understood
+          that Konva allows different layers to be separated. If completed
+          shapes are moved to another layer while new shapes continue to be
+          placed on the active layer, the performance can be improved
+          significantly. This made me realise that technical structure is not
+          separate from user experience. It directly affects whether the concept
+          can actually work in practice.
+        </p>
+        <p>
+          Another major challenge was my understanding of playfulness. At first,
+          I thought playfulness mainly came from bright colours, cute sounds,
+          childish elements, and simple interaction. In that sense, I believed
+          that a colourful visual style and a bubble-bursting idea were already
+          enough to make the project feel playful. However, after seeing other
+          projects and reflecting on my own, I realised that this understanding
+          was too shallow. Playfulness in an interactive tool is not only about
+          surface appearance. It also depends on whether the interaction itself
+          feels varied, responsive, unpredictable, and enjoyable over time.
+        </p>
+        <p>
+          These challenges taught me that design is not only about making
+          something work or making it look appealing. It is also about shaping
+          the kind of experience the user actually has. I learned that simple
+          does not automatically mean low-pressure, colourful does not
+          automatically mean playful, and technical completion does not
+          automatically mean a successful design outcome. If I continue
+          developing Bubble Bloom, I would focus both on improving technical
+          performance and on making the interaction itself feel more satisfying,
+          so that the intended experience is supported at both the functional
+          and experiential level.
+        </p>
+      </section>
+      <section class="card">
+        <h2>
+          An Aspect of a Peer's Creative Tool that Provided Insightful Contrast
+          to My Own Design Judgements
+        </h2>
+        <p>
+          A peer project that gave me a useful contrast was Ripple. What stood
+          out to me was that its playfulness did not come only from the visual
+          style. The visual and interactive parts worked together very well, so
+          the result felt stronger than either one on its own.
+        </p>
+        <p>
+          I was especially interested in how clear the concept and direction
+          were. The project used an ocean theme, and the rocks were not just
+          decoration. They also affected movement, collisions, and the
+          combinations of sounds, which created more variation in the
+          interaction. This made the project feel playful in a deeper way,
+          because the playfulness came from the behaviour of the system, not
+          only from how it looked.
+        </p>
+        <p>
+          In comparison, this helped me see that Bubble Bloom was simple, but
+          not necessarily stress-relieving or meaningfully playful. I wanted the
+          project to feel playful, but too much of that stayed at the level of
+          colour and surface appearance. Ripple helped me realise that stronger
+          playful design happens when concept, interaction, and visual language
+          all support each other, rather than when playfulness is added mainly
+          through style.
         </p>
       </section>
     </main>
